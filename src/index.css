@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Modern 3D Portfolio Design System */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@layer base {
+  :root {
+    /* Base Colors - Dark Theme */
+    --background: 222 47% 3%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 35% 6%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 35% 6%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Brand Colors - Electric Blue/Purple Gradient */
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 3%;
+    --primary-glow: 252 88% 70%;
+
+    --secondary: 240 15% 12%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 240 15% 8%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 252 88% 70%;
+    --accent-foreground: 222 47% 3%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 240 15% 15%;
+    --input: 240 15% 12%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+
+    /* Custom Design Tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(252 88% 70%));
+    --gradient-secondary: linear-gradient(135deg, hsl(240 15% 8%), hsl(240 15% 12%));
+    --gradient-glow: linear-gradient(135deg, hsl(217 91% 60% / 0.2), hsl(252 88% 70% / 0.2));
+    
+    --shadow-glow: 0 0 50px hsl(217 91% 60% / 0.3);
+    --shadow-card: 0 8px 32px hsl(222 47% 1% / 0.5);
+    --shadow-float: 0 20px 40px hsl(222 47% 1% / 0.3);
+
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    /* Sidebar */
+    --sidebar-background: 240 15% 6%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 222 47% 3%;
+    --sidebar-accent: 240 15% 12%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 240 15% 15%;
+    --sidebar-ring: 217 91% 60%;
+  }
+
+  /* Light theme - if needed later */
+  .light {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 3%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter antialiased overflow-x-hidden;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--gradient-primary);
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply opacity-80;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glow-effect {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .floating-card {
+    transition: var(--transition-smooth);
+  }
+
+  .floating-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-float);
+  }
+}
