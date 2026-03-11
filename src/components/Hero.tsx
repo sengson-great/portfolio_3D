@@ -18,11 +18,15 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            <span className="gradient-text">Seng Vengchhuong</span>
+            <span className="gradient-text">Seng Vengchhourng</span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Information Technology Engineering Student & Full-Stack Developer
-          </p>
+      <div className="relative max-w-2xl mx-auto mb-8">
+        <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/10 to-black/30 backdrop-blur-[2px] rounded-full -inset-x-4 -inset-y-2" />
+        <p className="relative text-xl md:text-2xl text-white font-light z-10"
+          style={{ textShadow: '0 2px 10px rgba(0,0,0,0.8)' }}>
+          Information Technology Engineering Student & Full-Stack Developer
+        </p>
+      </div>
           
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -41,7 +45,7 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="border-primary/30 hover:border-primary hover:bg-primary/10"
+              className="border-primary/30 hover:border-primary hover:bg-primary/10 hover:text-white"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Get In Touch

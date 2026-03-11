@@ -12,7 +12,7 @@ const Footer = () => {
           className="text-center"
         >
           <h3 className="text-2xl font-bold mb-4">
-            <span className="gradient-text">Seng Vengchhuong</span>
+            <span className="gradient-text">Seng Vengchhourng</span>
           </h3>
           <p className="text-muted-foreground mb-6">
             Information Technology Engineering Student & Full-Stack Developer
@@ -38,7 +38,7 @@ const Footer = () => {
           
           <div className="pt-6 border-t border-border/30">
             <p className="text-sm text-muted-foreground">
-              © 2024 Seng Vengchhuong. Built with React & Three.js
+              © 2026 Seng Vengchhourng. All rights reserved.
             </p>
           </div>
         </motion.div>

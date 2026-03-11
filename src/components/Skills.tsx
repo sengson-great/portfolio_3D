@@ -2,22 +2,26 @@ import { motion } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card';
 
 const skillsData = [
-  { name: 'Cross-platform Development', category: 'Development' },
-  { name: 'SQL Databases', category: 'Database' },
-  { name: 'JavaScript', category: 'Frontend' },
-  { name: 'PHP', category: 'Backend' },
-  { name: 'Java', category: 'Backend' },
-  { name: 'Python', category: 'Backend' },
-  { name: 'C/C++', category: 'Systems' },
-  { name: 'CSS', category: 'Frontend' },
-  { name: 'HTML', category: 'Frontend' },
-  { name: 'C#', category: 'Backend' },
-  { name: 'Backend Development', category: 'Development' },
-  { name: 'Frontend Development', category: 'Development' },
+  { name: 'ReactJS', category: 'Frontend' },
+  { name: 'Flutter/React Native', category: 'Cross-platform Development' },
+  { name: 'SQL & NoSQL', category: 'Database' },
+  { name: 'VueJS', category: 'Frontend' },
+  { name: 'NextJS', category: 'Fullstack' },
+  { name: 'ExpressJS', category: 'Backend' },
+  { name: 'Laravel', category: 'Backend' },
+  { name: 'Spring Boot', category: 'Backend' },
+  //{ name: 'Python', category: 'Backend' },
+  { name: 'TailwindCSS', category: 'Frontend' },
+  { name: 'Figma', category: 'Design' },
+  //{ name: 'C#', category: 'Backend' },
   { name: 'API Integration', category: 'Integration' },
+  { name: 'AI Integration', category: 'Integration' },
+  { name: 'Telegram Bot Integration', category: 'Integration' },
   { name: 'OOP Principles', category: 'Concepts' },
   { name: 'Git & GitHub', category: 'Tools' },
   { name: 'Docker', category: 'DevOps' },
+  { name: 'VPS Management', category: 'DevOps' },
+  { name: 'CI/CD with GitHub Actions', category: 'DevOps' },
 ];
 
 const categoryColors = {
@@ -34,7 +38,7 @@ const categoryColors = {
 
 const Skills = () => {
   return (
-    <section id="projects" className="py-20 px-6">
+    <section id="projects" className="py-20 px-6 bg-gradient-secondary">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

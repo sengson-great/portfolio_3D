@@ -4,24 +4,24 @@ import { Badge } from '@/components/ui/badge';
 
 const experiences = [
   {
-    title: 'Assistant for the National Cambodian Election 2023',
-    company: 'National Election Committee',
-    description: 'Assisted in organization, voter registration, ballot distribution, and polling station setup.',
-    year: '2023',
-    type: 'Civic Service'
+    title: 'Software Developer Intern',
+    company: 'SOB',
+    description: 'Worked as a full-stack developer on a web-based application, contributing to frontend development, backend APIs, database design, and server deployment. Implemented new features, fixed bugs, and improved system performance.',
+    year: 'Ongoing',
+    type: 'Software Development'
   },
   {
-    title: 'Shop Assistant',
-    company: "Family's Shop",
-    description: 'Supported customer service, cash transactions, and inventory organization.',
-    year: 'Ongoing',
-    type: 'Retail'
+    title: 'Freelance Software Developer',
+    company: 'India-Cambodia Friendship Primary School',
+    description: 'Designed and developed a website for a public primary school to present school information, activities, and announcements.',
+    year: '2026',
+    type: 'Software Development'
   }
 ];
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 px-6">
+    <section id="experience" className="py-20 px-6 bg-gradient-secondary">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -34,7 +34,7 @@ const Experience = () => {
             <span className="gradient-text">Work Experience</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Professional experience in civic service and customer relations
+            Professional experience in software development
           </p>
         </motion.div>
 
