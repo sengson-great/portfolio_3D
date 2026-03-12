@@ -28,9 +28,9 @@ const categoryColors = {
   'Development': 'border-primary/20 bg-primary/5',
   'Database': 'border-accent/20 bg-accent/5',
   'Frontend': 'border-primary-glow/20 bg-primary-glow/5',
-  'Backend': 'border-secondary/20 bg-secondary/10',
+  'Backend': 'border-destructive/20 bg-muted/5',
   'Systems': 'border-destructive/20 bg-destructive/5',
-  'Integration': 'border-muted/30 bg-muted/10',
+  'Integration': 'border-muted/90 bg-muted/60',
   'Concepts': 'border-primary/30 bg-primary/10',
   'Tools': 'border-accent/30 bg-accent/10',
   'DevOps': 'border-primary-glow/30 bg-primary-glow/10',
@@ -64,7 +64,7 @@ const Skills = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.05 }}
             >
-              <Card className={`floating-card border-2 ${categoryColors[skill.category]} backdrop-blur-sm`}>
+              <Card className={`floating-card border-2 ${categoryColors[skill.category]} backdrop-blur-sm h-32 flex flex-col justify-center items-center`}>
                 <CardContent className="p-4 text-center">
                   <h3 className="font-semibold text-sm md:text-base mb-1">{skill.name}</h3>
                   <span className="text-xs text-muted-foreground">{skill.category}</span>

@@ -58,7 +58,7 @@ const projects = [
     title: 'Order Apps',
     description: 'Barista ordering platform with automated chatbot notifications for order status updates and admin alerts.',
     category: 'Fullstack',
-    tags: ['Next.js', 'Vue', 'Laravel'],
+    tags: ['Next.js', 'Laravel'],
     link: 'https://github.com/sengson-great/sales-order',
   },
   {
