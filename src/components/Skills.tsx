@@ -38,7 +38,7 @@ const categoryColors = {
 
 const Skills = () => {
   return (
-    <section id="projects" className="py-20 px-6 bg-gradient-secondary">
+    <section className="py-20 px-6 bg-gradient-secondary">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

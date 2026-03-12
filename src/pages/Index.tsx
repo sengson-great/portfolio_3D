@@ -1,3 +1,4 @@
+import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Skills from '@/components/Skills';
 import About from '@/components/About';
@@ -10,17 +11,29 @@ import Projects from '@/components/Projects';
 
 const Index = () => {
   return (
-    <main className="min-h-screen bg-background">
-      <Hero />
-      <Skills />
-      <About />
-      <Experience />
-      <Projects />
-      <Education />
-      <Languages />
-      <Contact />
-      <Footer />
-    </main>
+    <>
+      <Navbar />
+      <main className="min-h-screen bg-background">
+        {/* Hero owns its own full-screen section; id="home" here */}
+        <div id="home">
+          <Hero />
+        </div>
+
+        {/* Skills has no id of its own, so we add it here */}
+        <div id="skills">
+          <Skills />
+        </div>
+
+        {/* The components below already define their own id internally */}
+        <About />
+        <Experience />
+        <Projects />
+        <Education />
+        <Languages />
+        <Contact />
+        <Footer />
+      </main>
+    </>
   );
 };
 
