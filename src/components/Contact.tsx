@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Mail, Phone, MapPin, Github, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
+import Github from './images/github.svg'
+import Linkedin from './images/linkedinicon.svg'
 
 const contactInfo = [
   {
@@ -15,6 +17,18 @@ const contactInfo = [
     label: 'Email',
     value: 'sengvengchhuong@gmail.com',
     href: 'mailto:sengvengchhuong@gmail.com'
+  },
+  {
+    icon: Github,
+    label: 'Github',
+    value: 'github.com/sengson-great',
+    href: 'https://github.com/sengson-great'
+  },
+  {
+    icon: Linkedin,
+    label: 'Linkedin',
+    value: 'Seng Vengchhourng',
+    href: 'https://www.linkedin.com/in/vengchhourng-seng-808581361/'
   },
   {
     icon: MapPin,
@@ -54,7 +68,15 @@ const Contact = () => {
             >
               <Card className="floating-card shadow-card backdrop-blur-sm border-border/50 h-full">
                 <CardContent className="p-6 text-center">
-                  <contact.icon className="w-8 h-8 mx-auto mb-4 text-primary" />
+                  {typeof contact.icon === 'string' ? (
+                    <img
+                      src={contact.icon}
+                      alt={contact.label}
+                      className="w-8 h-8 mx-auto mb-4 object-contain bg-white rounded-full"
+                    />
+                  ) : (
+                    <contact.icon className="w-8 h-8 mx-auto mb-4 text-primary" />
+                  )}
                   <h3 className="font-semibold mb-2">{contact.label}</h3>
                   {contact.href ? (
                     <a
