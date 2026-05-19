@@ -89,6 +89,27 @@ const projects = [
     tags: ['React Native', 'Supabase', 'PostgreSQL'],
     link: 'https://github.com/sengson-great/fitness-tracker',
   },
+  {
+    title: 'Quiz Web App',
+    description: 'Interactive quiz platform for creating and taking tests with real-time scoring and feedback.',
+    category: 'Web',
+    tags: ['React', 'Laravel', 'MySQL', 'Swagger'],
+    link: 'https://github.com/sengson-great/quizz-game-demo',
+  },
+  {
+    title: 'RAG Chatbot',
+    description: 'Retrieval-Augmented Generation (RAG) chatbot that integrates vector databases for enhanced information retrieval and natural language understanding.',
+    category: 'Web',
+    tags: ['Next.js', 'Gemini API'],
+    link: 'https://github.com/sengson-great/rag-chatbot',
+  },
+      {
+    title: 'Attendance Management System',
+    description: 'System for managing employee attendance with real-time tracking and reporting.',
+    category: 'Web',
+    tags: ['Next.js', 'Supabase', 'PostgreSQL'],
+    link: 'https://github.com/sengson-great/attendance-tracker',
+  },
 ];
 
 const categories = ['All', 'Web', 'Mobile', 'Backend'];

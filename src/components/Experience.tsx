@@ -5,10 +5,17 @@ import { Badge } from '@/components/ui/badge';
 const experiences = [
   {
     title: 'Software Developer Intern',
-    company: 'SOB',
+    company: 'SOB CO, LTD.',
     description: 'Worked as a full-stack developer on a web-based application, contributing to frontend development, backend APIs, database design, and server deployment. Implemented new features, fixed bugs, and improved system performance.',
-    year: 'Ongoing',
+    year: '2025-2026',
     type: 'Software Development'
+  },
+    {
+    title: 'Technical Support Intern / Chatbot Developer',
+    company: 'SPEED BOOK CO., LTD.',
+    description: 'Built internal chatbot for customer support. Handled user-reported bugs and relayed them to engineering.',
+    year: '2026',
+    type: 'Software Development / Technical Support'
   },
   {
     title: 'Freelance Software Developer',

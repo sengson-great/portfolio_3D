@@ -27,7 +27,7 @@ const contactInfo = [
   {
     icon: Linkedin,
     label: 'Linkedin',
-    value: 'Seng Vengchhourng',
+    value: 'Vengchhourng Seng',
     href: 'https://www.linkedin.com/in/vengchhourng-seng-808581361/'
   },
   {
