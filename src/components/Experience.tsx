@@ -11,7 +11,7 @@ const experiences = [
     type: 'Software Development'
   },
     {
-    title: 'Technical Support Intern / Chatbot Developer',
+    title: 'Technical Support / Chatbot Developer',
     company: 'SPEED BOOK CO., LTD.',
     description: 'Built internal chatbot for customer support. Handled user-reported bugs and relayed them to engineering.',
     year: '2026',
