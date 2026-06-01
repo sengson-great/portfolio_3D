@@ -13,13 +13,6 @@ const projects = [
     link: 'https://github.com/sengson-great/store-admin-panel',
   },
   {
-    title: 'Job Application Tracker',
-    description: 'A full-stack job application tracking platform with real-time updates and automated communication features.',
-    category: 'Web',
-    tags: ['.NET'],
-    link: 'https://github.com/sengson-great/job-tracker',
-  },
-  {
       title: 'Full-Stack Job Tracker',
       description: 'A premium full-stack job application tracker. Features a REST API backend with ASP.NET Core and Entity Framework Core, paired with a modern glassmorphic Blazor Web App (Interactive Server) frontend. Includes dynamic Kanban/List views, search filters, automated follow-up alerts, and an interactive interview Q&A manager.',
       category: 'Full-Stack Web',
