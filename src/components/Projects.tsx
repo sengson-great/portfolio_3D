@@ -12,13 +12,20 @@ const projects = [
     tags: ['React', 'Express.js', 'Node.js', 'MongoDB'],
     link: 'https://github.com/sengson-great/store-admin-panel',
   },
-//   {
-//     title: 'Ecommerce Mobile App',
-//     description: 'Cross-platform mobile shopping app with biometric authentication, offline mode, and barcode scanning capabilities for seamless product discovery.',
-//     category: 'Mobile',
-//     tags: ['Flutter', 'Dart', 'Firebase'],
-//     link: 'https://example.com/project1',
-//   },
+  {
+    title: 'Job Application Tracker',
+    description: 'A full-stack job application tracking platform with real-time updates and automated communication features.',
+    category: 'Web',
+    tags: ['.NET'],
+    link: 'https://github.com/sengson-great/job-tracker',
+  },
+  {
+      title: 'Full-Stack Job Tracker',
+      description: 'A premium full-stack job application tracker. Features a REST API backend with ASP.NET Core and Entity Framework Core, paired with a modern glassmorphic Blazor Web App (Interactive Server) frontend. Includes dynamic Kanban/List views, search filters, automated follow-up alerts, and an interactive interview Q&A manager.',
+      category: 'Full-Stack Web',
+      tags: ['C#', '.NET', 'ASP.NET Core', 'Blazor', 'Entity Framework', 'SQLite', 'Bootstrap Icons'],
+      link: 'https://github.com/sengson-great/JobTrackerApi',
+  },
   {
     title: 'Social Media App',
     description: 'Canvas-based paper editing platform with AI assistance for seamless document management and event coordination.',

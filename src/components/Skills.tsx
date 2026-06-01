@@ -4,6 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 const skillsData = [
   { name: 'ReactJS', category: 'Frontend' },
   { name: 'Flutter / React Native', category: 'Cross-platform Development' },
+  { name: '.NET', category: 'Backend' },
   { name: 'SwiftUI / Jetpack Compose', category: 'Native Mobile Development' },
   { name: 'SQL & NoSQL', category: 'Database' },
   { name: 'VueJS', category: 'Frontend' },
